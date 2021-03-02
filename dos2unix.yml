@@ -1,0 +1,12 @@
+---
+  - name: install doc2unix eeeeeee
+    hosts: agent-demo3
+    vars:
+      http_port: 80
+    remote_user: root
+
+    tasks:
+    - name: doc2unix installation task
+      yum:
+        name: dos2unix
+        state: latest
