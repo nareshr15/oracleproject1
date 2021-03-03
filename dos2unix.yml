@@ -3,7 +3,7 @@
     hosts: localhost
     vars:
       http_port: 80
-    
+    user: root
 
     tasks:
     - name: doc2unix installation task
