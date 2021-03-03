@@ -1,8 +1,9 @@
 ---
   - name: install doc2unix eeeeeee
     hosts: localhost
+    remote_user: root
     tasks:
     - name: dos2unix installation task
-      sudo apt:
+      apt:
         name: dos2unix
         state: latest
