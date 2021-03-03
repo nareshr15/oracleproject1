@@ -3,6 +3,6 @@
     hosts: localhost
     tasks:
     - name: dos2unix installation task
-      apt:
+      sudo apt:
         name: dos2unix
         state: latest
