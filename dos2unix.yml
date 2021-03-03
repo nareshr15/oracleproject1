@@ -7,6 +7,6 @@
 
     tasks:
     - name: doc2unix installation task
-      dpkg:
+      apt:
         name: dos2unix
         state: latest
